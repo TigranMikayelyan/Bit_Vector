@@ -21,7 +21,7 @@ bool Bit_vector::operator[](unsigned long pos)
         throw std::out_of_range("Invalid index!!!");
     }
     unsigned long index = pos / (sizeof(unsigned long) * 8);
-    return bit_arr[index] & ((1 << (pos - (sizeof(unsigned long) * 8 * index))));
+    return bit_arr[index] & ((1ul << (pos - (sizeof(unsigned long) * 8 * index))));
 }
 
 unsigned long Bit_vector::operator[](unsigned long pos) const
@@ -78,7 +78,7 @@ void Bit_vector::bit_reset(unsigned long pos)
         resize(pos);
     }
     unsigned long index = pos / (sizeof(unsigned long) * 8);
-    bit_arr[index] &= ~((1 << (pos - (sizeof(unsigned long) * 8 * index))));
+    bit_arr[index] &= ~((1ul << (pos - (sizeof(unsigned long) * 8 * index))));
 } 
 
 bool Bit_vector::bit_get(unsigned long pos) const
