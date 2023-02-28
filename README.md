@@ -1,4 +1,4 @@
-<h1>Bit_Vector</h1>
+<h1>Bit Vector</h1>
 <hr>       
 <i> <br> A bit vector is a container that stores a sequence of bits (0s and 1s) in a compact and efficient way. It is implemented using a dynamically allocated array of integers, where each integer stores a fixed number of bits (typically 32 or 64). </i>
 <hr>
