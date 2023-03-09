@@ -1,5 +1,4 @@
 #include "bit_vector.h"
-#include <iostream>
 #include <exception>
 
 Bit_vector::Bit_vector()
